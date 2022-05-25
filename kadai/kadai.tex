@@ -1,0 +1,73 @@
+%\documentclass[english]{ipsj}
+%\documentclass[english,preprint]{ipsj}
+\documentclass[english,preprint,JIP]{ipsj}
+
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[utf8]{inputenc}
+
+\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
+\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
+\def\|{\verb|}
+
+
+\setcounter{volume}{26}% vol25=2017
+\setcounter{number}{1}%
+\setcounter{page}{1}
+
+
+\received{2016}{3}{4}
+%\rereceived{2011}{10}{1}   % optional
+%\rerereceived{2011}{10}{31} % optional
+\accepted{2016}{8}{1}
+
+
+
+\usepackage[varg]{txfonts}%%!!
+\makeatletter%
+\input{ot1txtt.fd}
+\makeatother%
+
+\begin{document}
+
+\title{NECO課題４}
+
+% \affiliate{IPSJ}{Information Processing Society of Japan, 
+% Chiyoda, Tokyo 101--0062, Japan}
+% \affiliate{JU}{Johoshori University, Chiyoda, Tokyo 101--0062, Japan}
+% \paffiliate{PJU}{Johoshori University}
+
+\author{Tomoyoshi Yamamoto}{JU}[shori.hanako@johosyori-u.ac.jp]
+
+
+\begin{abstract}
+強化学習を用いた、現実世界への応用例をデモンストレーションする論文を探し、それについてまとめ、強化学習による現実世界に通用するレベルの適応力・活動が可能であるかを考察する。
+\end{abstract}
+
+\maketitle
+
+%1
+\section{はじめに}
+
+ゲーム世界には、プレイヤー意外に「ノンプレイヤーキャラクター」（通称：NPC）が存在する。プレイヤーが操作する「プレイヤーキャラクター」（通称：PC）とは対義的な存在である。
+
+特にRPG系のゲームにおいて、NPCは現実にいそうな振る舞いをするものがさまざまな形で存在する。その例として、家族的なキャラクター、店の店員・主人、村人、敵（モンスター、魔王）であったりする。これらNPCはそれぞれの行動パターンや会話ダイアログが事前にマニュアル式でプログラムされている。機械的なレスポンスや環境への適応を超越するNPCを強化学習と自然言語処理を用いて実現することが可能ではないかと考えている。
+
+以上の研究と開発を行うにおいて、強化学習がいかに現実世界に溶け込む、または一般社会の一部になりえるかを主軸として先行研究を調べ、それについて考察する。
+
+
+\begin{thebibliography}{99}
+\bibitem{companion}%1
+Goossens, M., Mittelbach, F. and Samarin, A.:
+{\it The LaTeX Companion},
+Addison Wesley, Reading, 
+Massachusetts (1993).
+
+
+\bibitem{latex}%2
+Lamport, L.: 
+{\it A Document Preparation System {\LaTeX} User's Guide \& Reference Manual}, 
+Addison Wesley, Reading, Massachusetts (1986).
+\end{thebibliography}
+
+\end{document}
